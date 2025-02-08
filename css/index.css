@@ -33,6 +33,15 @@ header{
     width: 16vw;
 }
 
+.antes-depois img{
+    max-width: 100%;
+    width: 300px;
+}
+
+.antes-img {
+    filter: grayscale(100);
+}
+
 .slideshow img{
     margin: 0 10px;
     width: 300px;
