@@ -1,10 +1,10 @@
-body{
+body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
 
-header{
+header {
     background-image: url(../img/HEADER-BG.png);
     width: 100vw;
     min-height: 80vh;
@@ -15,25 +15,26 @@ header{
     z-index: -1;
 }
 
-.navbar{
+.navbar {
     z-index: 100000;
     transition: all 0.4s ease-in-out;
 }
 
-.navbar-scrolled{
+.navbar-scrolled {
     background-color: #2f2f2f;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
 }
 
-.navbar-brand img{
+.navbar-brand img {
     width: 20vh;
 }
 
-.logo2 img{
-    width: 16vw;
+.slogan img {
+    min-width: 22vh;
 }
 
-.antes-depois img{
+
+.antes-depois img {
     max-width: 100%;
     width: 300px;
 }
@@ -42,50 +43,63 @@ header{
     filter: grayscale(100);
 }
 
-.slideshow img{
+.slideshow img {
     margin: 0 10px;
     width: 300px;
 }
 
 .slick-slide {
-	transform: scale(0.8);
-	transition: all 0.4s ease-in-out;
+    transform: scale(0.8);
+    transition: all 0.4s ease-in-out;
     filter: brightness(.5);
     /* opacity: .75; */
 }
 
 .slick-slide img {
-	max-width: 100%;
-	transition: all 0.4s ease-in-out;
+    max-width: 100%;
+    transition: all 0.4s ease-in-out;
 }
 
 .slick-center {
-	transform: scale(1.1);
+    transform: scale(1.1);
     filter: brightness(1);
     opacity: 100;
 }
 
 @media (max-width: 1200px) {
-    header{
+    header {
         min-height: 60vh;
     }
-    .navbar-brand img{
-        width: 20vh;
-    }
 
-    
-}
-@media (max-width: 768px) {
-    header{
-        min-height: 40vh;
-    }
-    .navbar{
-        position: relative;
-    }
-    .navbar-brand img{
+    .navbar-brand img {
         width: 18vh;
     }
-    .slideshow img{
+
+    .slogan img {
+        min-width: 20vh;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    header {
+        min-height: 40vh;
+    }
+
+    .navbar {
+        position: relative;
+    }
+
+    .navbar-brand img {
+        min-width: 16vh;
+    }
+
+    .slogan img {
+        min-width: 18vh;
+    }
+
+    .slideshow img {
         margin: 0 0px;
         width: 200px;
     }
